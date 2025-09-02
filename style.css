@@ -1,0 +1,51 @@
+body{
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+
+h1{
+    background-color: rgb(177, 65, 162);
+    color: white;
+    width: 50%;
+    margin: auto;
+    justify-content: center;
+}
+
+.p1{
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    justify-content: center;
+    text-align: center;
+    color: cornflowerblue;
+}
+
+.p1 p{
+    padding: 20px;
+    background: linear-gradient(rgba(106, 231, 208, 0.737), pink, rgb(172, 113, 70));
+    color: white;
+}
+.p1 img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding-bottom: 20px;
+    margin: auto;
+    animation: pp 4s linear infinite alternate;
+}
+
+@keyframes pp {
+    from{ 
+        transform: translate(1px) rotate(-360deg);
+    }
+    to{
+        transform: translate(200px) rotate(360deg);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .p1{
+        display: flex;
+    }
+}
